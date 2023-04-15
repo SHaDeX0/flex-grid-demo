@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap');
+
+:root {
+	--color-0: #d0d0d0;
+	--color-1-light: #f16fb7;
+	--color-1: #e80f88;
+	--color-2: #af0171;
+	--color-3: #790252;
+	--color-4: #4c0033;
+	--color-5: #350023;
+}
+
+body,
+select {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+	color: var(--color-0);
+	background-color: var(--color-5);
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 2em;
+	background-color: var(--color-4);
+}
+
+.nav h1 {
+	font-weight: 300;
+	color: var(--color-1);
+}
+
+.nav a {
+	color: var(--color-0);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.nav a:hover {
+	color: var(--color-2);
+	transition: 0.2s;
+}
+
+.nav a h4 {
+	margin: 0;
+}
+
+.hero {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 90.5vh;
+}
+
+.props {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	border-radius: 0.5em;
+	border-style: solid;
+	border-width: 0.0001px;
+	border-color: var(--color-2);
+	background-color: var(--color-4);
+	height: 25em;
+	width: 25em;
+}
+
+.props-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 20em;
+	margin: 0.25em;
+	font-weight: 300;
+	font-size: 1.075em;
+}
+
+.props-item select {
+	font-weight: 300;
+	font-size: 1em;
+	width: 10em;
+	outline: none;
+}
+
+.flex-container {
+	height: 40em;
+	width: 40em;
+	border-width: 0.0001px;
+	border-style: solid;
+	border-color: var(--color-2);
+	border-radius: 0.5em;
+	background-color: var(--color-4);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: nowrap;
+	transition: 0.4s;
+}
+
+.flex-item {
+	height: 5em;
+	width: 5em;
+	border-radius: 0.25em;
+	font-weight: 300;
+	font-size: 1.3em;
+	background-color: var(--color-3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	word-wrap: break-word;
+	transition: 0.4s ease;
+}
+
+.flex-item:hover {
+	transform: scale(1.1);
+	border-radius: 0.5em;
+	transition: 0.2s ease;
+}
