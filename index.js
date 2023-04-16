@@ -8,7 +8,7 @@ const addFlexItem = e => {
 	flexItem.innerHTML = 'Flex ' + ++counter
 	flex.appendChild(flexItem)
 	e.parentNode.insertBefore(flexItem, e)
-	if (counter == 9) e.parentNode.removeChild(e)
+	if (counter === 9) e.parentNode.removeChild(e)
 }
 
 const justifyContent = e => {

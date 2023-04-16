@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="grid.css" />
 		<title>Internship Project</title>
 	</head>
 	<body>
@@ -14,5 +15,46 @@
 				<h4>Flex Demo</h4>
 			</a>
 		</div>
+		<div class="hero">
+			<div class="props">
+				<h2>Properties</h2>
+				<div class="props-items">
+					<div class="props-item">
+						<label>grid-template-columns</label>
+						<input type="range" min="2" max="5" step="1" value="5" onchange="gridTemplateColumns(this)" />
+					</div>
+					<div class="props-item">
+						<label>justify-items</label>
+						<select onchange="justifyItems(this)">
+							<option value="start">start</option>
+							<option value="end">end</option>
+							<option selected value="center">center</option>
+							<option value="stretch">stretch</option>
+						</select>
+					</div>
+					<div class="props-item">
+						<label>align-items</label>
+						<select onchange="alignItems(this)">
+							<option value="start">start</option>
+							<option value="end">end</option>
+							<option selected value="center">center</option>
+							<option value="stretch">stretch</option>
+						</select>
+					</div>
+					<div class="props-item">
+						<label>gap</label>
+						<input type="range" min="0" max="3.5" step="0.01" value="1" onchange="gap(this)" />
+					</div>
+				</div>
+			</div>
+			<div id="grid-container" class="grid-container">
+				<div class="grid-item">Grid 1</div>
+				<div class="grid-item">Grid 2</div>
+				<div class="grid-item">Grid 3</div>
+				<div class="grid-item">Grid 4</div>
+				<div onclick="addItem(this)" class="grid-item">Add item</div>
+			</div>
+		</div>
+		<script src="grid.js"></script>
 	</body>
 </html>

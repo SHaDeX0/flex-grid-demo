@@ -126,8 +126,8 @@ body {
 }
 
 .flex-container {
-	height: 40em;
-	width: 40em;
+	height: 50em;
+	width: 50em;
 	border-width: 0.0001px;
 	border-style: solid;
 	border-color: var(--color-2);
@@ -153,13 +153,13 @@ body {
 	align-items: center;
 	text-align: center;
 	word-wrap: break-word;
-	transition: 0.4s ease;
+	transition: 0.4s;
 }
 
 .flex-item:hover {
 	transform: scale(1.1);
 	border-radius: 0.5em;
-	transition: 0.2s ease;
+	transition: 0.2s;
 }
 
 .tooltip {

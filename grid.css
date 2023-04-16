@@ -1,0 +1,28 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 0.5em;
+	justify-items: center;
+	align-items: center;
+
+	height: 50em;
+	width: 50em;
+	border: 0.0001px solid var(--color-2);
+	border-radius: 0.5em;
+	background-color: var(--color-4);
+	overflow: hidden;
+	transition: 0.75s;
+}
+
+.grid-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	word-wrap: break-word;
+	min-height: 5em;
+	min-width: 5em;
+	border-radius: 0.25em;
+	font-weight: 300;
+	font-size: 1.3em;
+	background-color: var(--color-3);
+}
