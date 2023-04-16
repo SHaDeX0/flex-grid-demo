@@ -1,6 +1,6 @@
 # flex-grid-demo
 
-##A simple website that helps you learn about flex and grid properties.
+## A simple website that helps you learn about flex and grid properties.
 
 It demonstrates following flex properties:
 1. justify-content
