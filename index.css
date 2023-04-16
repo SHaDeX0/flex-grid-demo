@@ -62,7 +62,7 @@ body {
 .props {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: space-between;
 	align-items: center;
 	border-radius: 0.5em;
 	border-style: solid;
@@ -71,6 +71,14 @@ body {
 	background-color: var(--color-4);
 	height: 25em;
 	width: 25em;
+}
+
+.props-items {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 20em;
+	margin-bottom: 1em;
 }
 
 .props-item {
@@ -84,10 +92,37 @@ body {
 }
 
 .props-item select {
+	padding-inline: 0.35em;
+	padding-block: 0.2em;
 	font-weight: 300;
 	font-size: 1em;
 	width: 10em;
+	background-color: #79025255;
+	border: 1px solid var(--color-2);
+	border-radius: 0.75em;
+	color: var(--color-0);
+	backdrop-filter: blur(3px);
 	outline: none;
+	transition: 0.5s;
+}
+
+.props-item select:hover {
+	background-color: var(--color-3);
+	transition: 0.2s;
+}
+
+.props-item select:active {
+	background-color: var(--color-2);
+	transition: 0.2s;
+}
+
+.props-item option {
+	font-weight: 200;
+	background-color: var(--color-5);
+}
+
+.props-item input {
+	width: 12.5em;
 }
 
 .flex-container {
@@ -102,7 +137,8 @@ body {
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: nowrap;
-	transition: 0.4s;
+	gap: 1em;
+	transition: 0.75s;
 }
 
 .flex-item {
@@ -124,4 +160,23 @@ body {
 	transform: scale(1.1);
 	border-radius: 0.5em;
 	transition: 0.2s ease;
+}
+
+.tooltip {
+	position: absolute;
+	text-align: center;
+	padding: 0.25em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.85em;
+	font-weight: 400;
+	width: 13em;
+	border-radius: 0.75em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--color-3);
+	background-color: #00000066;
+	backdrop-filter: blur(3px);
+	transition: 0.4s;
 }
