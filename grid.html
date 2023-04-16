@@ -20,11 +20,17 @@
 				<h2>Properties</h2>
 				<div class="props-items">
 					<div class="props-item">
-						<label>grid-template-columns</label>
+						<label
+							onmouseover="showGridTemplateColumnsToolTip(event, this)"
+							onmouseout="hideGridTemplateColumnsToolTip(event, this)"
+							>grid-template-columns</label
+						>
 						<input type="range" min="2" max="5" step="1" value="5" onchange="gridTemplateColumns(this)" />
 					</div>
 					<div class="props-item">
-						<label>justify-items</label>
+						<label onmouseover="showJustifyItemsToolTip(event, this)" onmouseout="hideJustifyItemsToolTip(event, this)"
+							>justify-items</label
+						>
 						<select onchange="justifyItems(this)">
 							<option value="start">start</option>
 							<option value="end">end</option>
@@ -33,7 +39,9 @@
 						</select>
 					</div>
 					<div class="props-item">
-						<label>align-items</label>
+						<label onmouseover="showAlignItemsToolTip(event, this)" onmouseout="hideAlignItemsToolTip(event, this)"
+							>align-items</label
+						>
 						<select onchange="alignItems(this)">
 							<option value="start">start</option>
 							<option value="end">end</option>
@@ -42,7 +50,7 @@
 						</select>
 					</div>
 					<div class="props-item">
-						<label>gap</label>
+						<label onmouseover="showGapToolTip(event, this)" onmouseout="hideGapToolTip(event, this)">gap</label>
 						<input type="range" min="0" max="3.5" step="0.01" value="1" onchange="gap(this)" />
 					</div>
 				</div>
