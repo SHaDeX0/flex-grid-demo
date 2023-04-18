@@ -10,7 +10,6 @@
 	border: 0.0001px solid var(--color-2);
 	border-radius: 0.5rem;
 	background-color: var(--color-4);
-	overflow-y: auto;
 	transition: 0.75s;
 }
 
