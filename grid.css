@@ -1,16 +1,16 @@
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	gap: 0.5em;
+	gap: 0.5rem;
 	justify-items: center;
 	align-items: center;
 
-	height: 50em;
-	width: 50em;
+	height: 45vh;
+	width: 45vw;
 	border: 0.0001px solid var(--color-2);
-	border-radius: 0.5em;
+	border-radius: 0.5rem;
 	background-color: var(--color-4);
-	overflow: hidden;
+	overflow-y: auto;
 	transition: 0.75s;
 }
 
@@ -19,10 +19,10 @@
 	justify-content: center;
 	align-items: center;
 	word-wrap: break-word;
-	min-height: 5em;
-	min-width: 5em;
-	border-radius: 0.25em;
+	height: 10vh;
+	width: 10vh;
+	border-radius: 0.25rem;
 	font-weight: 300;
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	background-color: var(--color-3);
 }

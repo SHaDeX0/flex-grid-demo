@@ -23,7 +23,7 @@ const alignItems = e => {
 }
 
 const gap = e => {
-	grid.style.gap = e.value + 'em'
+	grid.style.gap = e.value + 'rem'
 }
 
 //Tooltip

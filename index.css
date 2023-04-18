@@ -27,7 +27,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-inline: 2em;
+	padding-inline: 2rem;
 	background-color: var(--color-4);
 }
 
@@ -64,42 +64,42 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	border-radius: 0.5em;
+	border-radius: 0.5rem;
 	border-style: solid;
 	border-width: 0.0001px;
 	border-color: var(--color-2);
 	background-color: var(--color-4);
-	height: 25em;
-	width: 25em;
+	height: 45vh;
+	width: 45vh;
 }
 
 .props-items {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	height: 20em;
-	margin-bottom: 1em;
+	height: 40vh;
+	margin-bottom: 1rem;
 }
 
 .props-item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 20em;
-	margin: 0.25em;
+	width: 20vw;
+	margin: 0.25rem;
 	font-weight: 300;
-	font-size: 1.075em;
+	font-size: 1.075rem;
 }
 
 .props-item select {
-	padding-inline: 0.35em;
-	padding-block: 0.2em;
+	padding-inline: 0.35rem;
+	padding-block: 0.2rem;
 	font-weight: 300;
-	font-size: 1em;
-	width: 10em;
+	font-size: 1rem;
+	width: 10vw;
 	background-color: #79025255;
 	border: 1px solid var(--color-2);
-	border-radius: 0.75em;
+	border-radius: 0.75rem;
 	color: var(--color-0);
 	backdrop-filter: blur(3px);
 	outline: none;
@@ -122,31 +122,32 @@ body {
 }
 
 .props-item input {
-	width: 12.5em;
+	width: 9.75vw;
 }
 
 .flex-container {
-	height: 50em;
-	width: 50em;
+	height: 45vh;
+	width: 45vw;
 	border-width: 0.0001px;
 	border-style: solid;
 	border-color: var(--color-2);
-	border-radius: 0.5em;
+	border-radius: 0.5rem;
 	background-color: var(--color-4);
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: nowrap;
-	gap: 1em;
+	gap: 1rem;
+	overflow: scroll;
 	transition: 0.75s;
 }
 
 .flex-item {
-	height: 5em;
-	width: 5em;
-	border-radius: 0.25em;
+	height: 10vh;
+	width: 10vh;
+	border-radius: 0.25rem;
 	font-weight: 300;
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	background-color: var(--color-3);
 	display: flex;
 	justify-content: center;
@@ -158,21 +159,21 @@ body {
 
 .flex-item:hover {
 	transform: scale(1.1);
-	border-radius: 0.5em;
+	border-radius: 0.5rem;
 	transition: 0.2s;
 }
 
 .tooltip {
 	position: absolute;
 	text-align: center;
-	padding: 0.25em;
+	padding: 0.25rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 0.85em;
+	font-size: 0.85rem;
 	font-weight: 400;
-	width: 13em;
-	border-radius: 0.75em;
+	width: 13vw;
+	border-radius: 0.75rem;
 	border-width: 1px;
 	border-style: solid;
 	border-color: var(--color-3);

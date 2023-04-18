@@ -28,7 +28,7 @@ const flexWrap = e => {
 }
 
 const gap = e => {
-	flex.style.gap = e.value + 'em'
+	flex.style.gap = e.value + 'rem'
 }
 
 //Tooltip show/hide
